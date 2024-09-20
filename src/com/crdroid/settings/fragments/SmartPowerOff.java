@@ -61,12 +61,11 @@ public class SmartPowerOff extends SettingsPreferenceFragment {
         Calendar calendar = Calendar.getInstance();
         int currentHour = calendar.get(Calendar.HOUR_OF_DAY);
         int currentMinute = calendar.get(Calendar.MINUTE);
-        int hour = (currentHour + 1) % 24;
         TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(),
                 (view, hourOfDay, minute) -> {
                     saveRebootTime(hourOfDay, minute);
                 },
-                hour, currentMinute, DateFormat.is24HourFormat(getContext()));
+                currentHour, currentMinute, DateFormat.is24HourFormat(getContext()));
 
         timePickerDialog.show();
     }
