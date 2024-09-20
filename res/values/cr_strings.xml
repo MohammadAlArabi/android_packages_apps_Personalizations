@@ -54,9 +54,6 @@
     <!-- Display settings screen, deactivation button action for custom schedule [CHAR LIMIT=40] -->
     <string name="night_display_activation_off_custom">Turn off until <xliff:g name="time" example="10 PM">%1$s</xliff:g></string>
 
-    <!-- Max cached processes -->
-    <string name="max_cached_processes_title">Max cached processes</string>
-
     <!-- Dashboard Greetings Messages -->
     <string name="dashboard_morning1">Start your day positively!</string>
     <string name="dashboard_morning2">The Sun is up!</string>
